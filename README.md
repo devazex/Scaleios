@@ -1,6 +1,6 @@
 ## About
 
-Scaleios [![NPM version](https://img.shields.io/npm/v/eris.svg?style=flat-square&color=informational)](https://npmjs.com/package/scaleios)
+Scaleios [![NPM version](https://img.shields.io/npm/v/scaleios.svg?style=flat-square&color=informational)](https://npmjs.com/package/scaleios)
 
 
 Scaleios is a powerful [Node.js](https://nodejs.org) module that allows you to easily interact with the
