@@ -230,10 +230,6 @@ export const Identify: Payload = {
     },
     presence: {
       since: Date.now(),
-      game: {
-        name: "EvolveJS",
-        type: ActivityTypes.PLAYING,
-      },
       status: "",
       afk: false,
     },

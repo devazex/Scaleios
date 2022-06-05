@@ -6,7 +6,7 @@ export class Oauth2 {
 	constructor(public client: Client) {
 		if (!this.client.secret)
 			throw this.client.transformer.error(
-				"No Client Secret Provided in EvolveScaleiosBuilder"
+				"No Client Secret Provided in ScaleiosBuilder"
 			);
 	}
 

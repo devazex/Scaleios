@@ -14,7 +14,7 @@ import { ClientUser } from "./ClientUser";
 import { ShardManager } from "./Websocket/ShardManager";
 
 /**
- * The Client which was given by EvolveScaleiosBuilder#build
+ * The Client which was given by ScaleiosBuilder#build
  * @type {Client}
  * @class
  * @extends {EventListener}
