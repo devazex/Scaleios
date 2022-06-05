@@ -1,0 +1,46 @@
+name: Node.js Package
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 15
+          registry-url: https://registry.npmjs.org/
+      - run: yarn && yarn build
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
+  publish-deno:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 15
+          registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        run: yarn
+      - name: Generate Deno
+        run: node scripts/nodetodeno.js
+      - name: Checkout the deno-master branch
+        run: |
+          git fetch
+          git checkout deno-master -f
+      - name: Configure git identity
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+      - name: Stage, commit & push changes
+        run: |
+          git add ./deno/
+          git commit -m  "Deno Publish Triggered due to new version"
+          git push origin deno-master
