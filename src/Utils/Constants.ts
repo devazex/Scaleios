@@ -18,7 +18,7 @@ import { StoreChannel } from "../Structures/Channel/StoreChannel";
 
 export enum CONSTANTS {
   Gateway = "wss://gateway.discord.gg/?v=8&encoding=",
-  Api = "https://discord.com/api/v8",
+  Api = "https://discord.com/api/v9",
   API_ERROR = "API_ERROR",
   EVENTS = "EVENTS",
 }
