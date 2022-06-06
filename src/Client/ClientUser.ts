@@ -8,7 +8,7 @@ export class ClientUser extends User {
     public id: string,
     public flags: number,
     public email: string,
-    private bot: boolean,
+    public bot: boolean,
     public avatar: string
   ) {
     super({
@@ -16,9 +16,6 @@ export class ClientUser extends User {
       avatar,
       username: name,
       discriminator,
-      flags,
-      bot,
-      email,
     });
   }
 }
