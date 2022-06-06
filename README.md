@@ -20,7 +20,7 @@ pnpm add scaleios
 
 - [Website](https://scaleios.js.org/).
 - [Documentation](https://scaleios.js.org/docs).
-- [discord.js Discord server](https://discord.gg/scaleios)
+- [Discord server](https://discord.gg/scaleios)
 - [Discord API Discord server](https://discord.gg/discord-api)
 - [GitHub](https://github.com/devazex/scaleios)
 - [npm](https://www.npmjs.com/package/scaleios)
