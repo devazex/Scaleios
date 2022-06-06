@@ -43,13 +43,12 @@ export class ShardManager extends EventListener {
 			}
 		}
 	}
-//working on it
-	// get ping(): number {
-	// 	return (
-	// 		this.connections.reduce<number>((a, b) => a + b.shardPing) /
-	// 		this.connections.size
-	// 	);
-	// }
+	get ping(): number {
+		return (
+			this.connections.reduce<number>((a, b) => a + b.shardPing) /
+			this.connections.size
+		);
+	}
 
 	public getguildShardId(guildID: string): number {
 		return (Number(guildID) >> 22) % this.connections.size;
