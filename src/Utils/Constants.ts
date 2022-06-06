@@ -226,7 +226,7 @@ export const Identify: Payload = {
     properties: {
       $os: process.platform,
       $browser: "discord",
-      $device: "evolvejs",
+      $device: "scaleios",
     },
     presence: {
       since: Date.now(),

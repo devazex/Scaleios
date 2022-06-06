@@ -1,6 +1,6 @@
 {
   "name": "scaleios",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An advanced Discord API wrapper with TS and JS support",
   "main": "dist/index.js",
   "scripts": {

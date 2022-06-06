@@ -1,7 +1,7 @@
 {
   "name": "tests",
   "version": "1.0.0",
-  "description": "tests of evolvejs",
+  "description": "tests of ScaleiosBuilder",
   "main": "dist/ScaleiosBuilder.js",
   "scripts": {
     "test": "node ."
